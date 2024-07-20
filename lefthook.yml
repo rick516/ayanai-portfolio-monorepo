@@ -15,9 +15,12 @@
 pre-commit:
   parallel: true
   commands:
-    eslint:
+    format:
       glob: "*.{js,ts,jsx,tsx,yaml,yml}"
-      run: pnpm prettier --write \"**/*.{js,ts,jsx,tsx,yaml,yml}\" {staged_files}
+      run: |
+        pnpm prettier --write {staged_files}
+        git add {staged_files}
+
 #     rubocop:
 #       tags: backend style
 #       glob: "*.rb"

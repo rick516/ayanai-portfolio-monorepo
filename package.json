@@ -11,6 +11,7 @@
     "lefthook": "^1.7.4",
     "prettier": "^3.3.3",
     "turbo": "^2.0.9",
+    "typedoc": "^0.26.4",
     "typescript": "^5.5.3"
   },
   "packageManager": "pnpm@9.5.0",
